@@ -1,0 +1,49 @@
+1. Describe how the course grade is calculated. 
+Make sure to include assignment types and their percentages. (10pts)
+
+Answer: The course grade is calculated based on 3 (or potentially 4) factors.
+It is a combination of the average of 9 Lab Solution grades (10% of the final grade), the average of 9 Lab Report grades(10% of the final grade), and the average of all 8 homeworks(80% of the final grade). 
+It is possible to replace the lowest homework assignment grade by taking the final exam.
+
+2. Where are all assignments submitted and where are the grades + feedback for assignments found? HINT: It’s the same place, and it’s not Blackboard. (10pts)
+
+Answer: All of the assignments are submitted at the CSCE 146 Dropbox. This is also wher you can find the grades and feedback.
+
+3. What is the policy regarding,
+Late work?
+Make-up work?
+Regrade requests? (10pts)
+
+Answer: Late work is not accepted. 
+Make up work can be requested for an assignment before the assignment is due, and you can only make up 1 Homework, 1 Lab Solution, and 1 Lab Report.
+Regrade requests must be made within one week after the assignment has been graded, and must be done via email to the instructor. No additional work is allowed. Multiple and frequent regrade requests disqualify future requests.
+
+4. True or False. All assignments must be completed individually. (10pts)
+
+Answer: True
+
+5. For programming assignments, what must be submitted to the CSCE Dropbox and what is its file extension? (10pts)
+
+Answer: You submit the source file of the coding assignment, with a .java extension.
+
+6. In the Java Programming Language, when a source code is compiled using the Java Compiler, is it compile to machine code or byte code? (10pts)
+
+Answer: It is compiled in byte code
+
+7. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+Answer: It is not error free. You cannot assign a variable of type int with a double value such as j.
+You can fix this by simply using the number wanted in int form instead of the variable
+
+8. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+Answer: This looks to be error free. It would print out an array, where each index in the array has a value of that index squared stored. This will print out that value for each index up to 9 squared.
+
+9. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+Answer: There is a logic error. The variable j is stated to be 10.0, and there is a while loop declared to run when j < 0. This will cause the program to do nothing, as J is not ever less than 0
+You could fix it by having it be less than a number greater than 10
+
+10. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+Answer: This will print out "B", as the first thing that the variable value fits with is value%2 == 0

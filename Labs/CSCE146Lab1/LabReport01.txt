@@ -1,0 +1,65 @@
+1. Create a section named “Problem” and describe this lab’s problem in your own words. (10pts).
+
+Problem:
+Create a Class of Functions that can accurately sort any given list of words based on the vowels, consonants, or word length and return that sorted lists.
+
+2. Create a section named “Solution Description” and describe how the code solves the problem in your own words. (10pts).
+
+Solution Description:
+using a nested for loop to iterate through the array and then iterate through the word allows us to see every individual character within the word. This helps solve the problem of counting the vowels, consonants, or length.
+To make the code more readable we create seperate functions for actually counting the given criteria, returning a number for the bubble sort that is used to re-arrange the words based on the criteria
+
+3. Create a section named “Problems Encountered” and describe the various syntax, run-time, and logic errors that were encountered while implementing the solution. (10pts).
+
+Problems Encountered:
+My only problem when coding was running into the "infinite terminal" bug, which I thought was a runtime error at first. To solve this, I used print statements all throughout my code to let me identify how far the program got before it stopped outputting information.
+From this I was able to deduce that my bubble sort was causing the problem. I realized i had incorrect syntax for my variable reassingment. To make sure, I gave it a print statement, and it was an infinite print loop till the terminal was killed.
+
+
+4. What are the advantages of using an array? (10pts)
+
+Arrays are good for storing data, and quickly accessing that data when needed. They have a fixed size so finding that data is easy for the user.
+
+5. What are the disadvantages of using an array? (10pts)
+
+However, the fixed size of an array is also a disadvantage. This is because you'll need to know exactly how many elements you will insert into the array when you are creating it.
+and Since arrays are fixed, there might end up being elements that arent used, and because of that you now have wasted memory.
+If you need to insert extra elements, you need to create a new array. Changing the elements of an array can also cost you runtime complexity as you have to shift all elements to accomodate.
+
+
+6. Describe the range of valid indices for an array. (10pts)
+
+The range of valid indices for an array is 0 to array.length - 1.
+
+7. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+ 
+The code uses double quotes for the character instead of single quotes.
+ In addition, it is adding on the variable i, which is an int. 
+just make it abcs[i] = alp and have alp be a variable declared before. char alp = (char) ('a'+ i)
+
+
+8. Looking at the below code snippet, its purpose is to count all the values found in the Array “array” that are divisible by 4, divisible by 5 or both. Is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+the foor loop has no incriment value. It will forever be 0. Fix this by change i=0 to i++
+There is a logic error. The question mentions that it also wants to count numbers that are BOTH divisible by 4 and 5. 
+However, they use an if and then an else if statemnt. This means that if the number is divisible by both, like 80, it will only count under 4.
+To fix this, you would just use two if statements
+ 
+
+9. Looking at the below code snippet, the purpose of this static method is to make a copy of an integer array and return the copy, but it does not seem to work correctly. Describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+
+You are not creating a copy of the array. This code only creates a reference variable of the array.
+To create an entire new copy of the array you must iterate through its value and copy them into the copy array.
+
+10. Looking at the below code snippet, is this code error free and if so, what will it print to the console? If the code does have errors, then describe all syntax, run-time, and logic errors and how they may be fixed. (10pts)
+This code is right. It will print out the following:
+1.0
+2.0
+3.0
+4.0
+5.0
+2.0
+4.0
+6.0
+8.0
+10.0
